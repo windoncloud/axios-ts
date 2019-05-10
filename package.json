@@ -1,0 +1,23 @@
+{
+  "name": "axios-ts",
+  "version": "1.0.0",
+  "description": "axios in ts",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/windoncloud/axios-ts.git"
+  },
+  "keywords": [
+    "axios",
+    "typescript"
+  ],
+  "author": "kingsley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/windoncloud/axios-ts/issues"
+  },
+  "homepage": "https://github.com/windoncloud/axios-ts#readme"
+}
