@@ -66,4 +66,24 @@ let o = {
 
 let {a, ...passThrough} = o
 let total = passThrough.b + passThrough.c.length
-console.log(total)
+console.log('total', total)
+
+let {a: newName1, b: newName2} = o
+newName1 = o.a // let newName1 = o.a
+newName2 = o.b // let newName2 = o.b
+// let {a, b}:{a:string,b:number} = o
+
+function keepWholeObject(wholeObject: {a: string, b?:number}){
+    let {a, b = 1001} = wholeObject
+}
+
+type C = {a:string, b?:number}
+// function fu({a,b}:C):void{
+// function fu({a = '', b = 0}:C):void{
+function fu({a, b = 0} = {a: ''}):void{
+}
+
+fu({a: 'yes'})
+fu()
+// fu({}) //要传a
+// 解构尽量小而简单，便于理解
