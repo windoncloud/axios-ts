@@ -48,3 +48,22 @@ const kitty = {
 
 kitty.name = 'Jerry'
 kitty.numLives--
+
+let input:[number,number] = [1,2]
+
+function ff([first, second]: [number,number]) {
+    console.log(first)
+    console.log(second)
+}
+
+let [first, ...reset] = [1,2,3,4]
+
+let o = {
+    a: 'foo',
+    b: 12,
+    c: 'bar'
+}
+
+let {a, ...passThrough} = o
+let total = passThrough.b + passThrough.c.length
+console.log(total)
