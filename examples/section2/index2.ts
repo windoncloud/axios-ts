@@ -38,3 +38,13 @@ for (let i=0; i<10;i++) {
         console.log(i)
     },100*i)
 }
+
+const numLivesForCat = 9
+
+const kitty = {
+    name: 'Kitty',
+    numLives: numLivesForCat
+}
+
+kitty.name = 'Jerry'
+kitty.numLives--
