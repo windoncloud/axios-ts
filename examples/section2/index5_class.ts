@@ -5,11 +5,11 @@ interface ClockInterface { // 实例类型
 }
 
 interface ClockCOnstructor {
-    new(hour:number, minute: number)
+    new(hour:number, minute: number): ClockInterface
 //  构造器签名
 }
 
-class Index5_class implements ClockInterface {
+class Clock implements ClockInterface {
 // class Index5_class implements ClockCOnstruc tor {
     currentTime: Date
 
