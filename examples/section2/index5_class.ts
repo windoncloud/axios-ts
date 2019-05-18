@@ -20,4 +20,5 @@ class Clock implements ClockInterface {
     setTime(d:Date) {
         this.currentTime = d
     }
+
 }
